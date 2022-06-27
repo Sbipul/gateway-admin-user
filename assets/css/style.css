@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Stick+No+Bills:wght@500;600;700;800&display=swap');
+ul{
+  padding: 0;
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  color: initial;
+}
+html,body{
+  font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Stick No Bills', sans-serif; */
+}
+main{
+  height: 85vh;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6614d0;
+}
+.logo i {
+  font-size: 2.5rem;
+  margin-left: 0;
+  color: #6614d0;
+  font-weight: 900;
+}
+.logo h2 {
+  font-weight: 900;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-size: 2.2rem;
+  color: white;
+  background: #6614d0;
+  padding: .4rem;
+  margin: 0;
+}
+.admin-password{
+  width: 90%;
+}
+.admin-password:focus{
+  outline: none;
+}
+.log-text{
+  position: relative;
+  z-index: 55;
+}
+.log-text span {
+  background: #6614d01f;
+  color: indigo;
+  padding: .5rem .9rem;
+  border-radius: 29px;
+}
+.log-text h1 {
+  font-size: 6rem;
+  font-family: auto;
+  color: #6614d0;
+  font-weight: 900;
+  line-height: 80px;
+  margin: 40px 0;
+}
+.btn--info {
+  color: #fff;
+  background-color: #6614d0;
+  border-color: #6614d0;
+}
+.log-img{
+  position: relative;
+  z-index: 77;
+}
+.log-img-abs{
+  position: absolute;
+}
+.log-img-abs {
+  position: absolute;
+  height: 200px;
+  width: 209px;
+  right: 7%;
+  top: 5%;
+  animation: up-down 5s linear infinite;
+}
+.log-img-abs2 {
+  position: absolute;
+  height: 100px;
+  width: 109px;
+  right: 62%;
+  top: 33%;
+  animation: up-down2 7s linear infinite;
+}
+.border-indigo {
+  border-color: #6614d0!important;
+}
+.info {
+  width: 200px;
+  position: absolute;
+  height: 100px;
+  background: #f6efff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #6614d0;
+  top: 30px;
+  right: 0;
+  border-radius: 5px;
+}
+.info:after {
+  border-top: 10px solid #ff000000;
+  border-bottom: 10px solid #f6efff;
+  border-left: 10px solid #00800000;
+  border-right: 10px solid #ffff0000;
+  position: absolute;
+  content: "";
+  bottom: 100%;
+  right: 2%;
+}
+.tab h3 {
+  color: #6614d0;
+  border-bottom: 2px solid #6614d0;
+  padding-bottom: 5px;
+}
+.inside-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+@keyframes up-down {
+  0%{
+    top: 5%;
+  }
+  50%{
+    top: 0%;
+  }
+  100%{
+    top: 5%;
+  }
+}
+@keyframes up-down2 {
+  0%{
+    top: 33%;
+  }
+  50%{
+    top: 28%;
+  }
+  100%{
+    top: 33%;
+  }
+}
