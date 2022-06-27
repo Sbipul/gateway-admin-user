@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item mx-3">
-              <a class="nav-link active" aria-current="page" onclick="loginOption(0)" href="javascript:void(0)">Home</a>
+              <a class="nav-link active" aria-current="page" href="javascript:void(0)">Home</a>
             </li>
             <li class="nav-item mx-3">
               <a class="nav-link" href="#">Getting Started</a>
@@ -46,6 +46,9 @@
             <li class="nav-item">
               <a class="nav-link ms-3" href="#" tabindex="-1" aria-disabled="true">Privacy & Policy</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link ms-3" href="./login.html" tabindex="-1" aria-disabled="true">Login</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,17 +65,9 @@
               <h1>Ultimate <br> SMS Login</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus fugit unde ad. Neque dolorum corrupti voluptatem quod impedit inventore error, quis consequatur vitae earum.</p>
               <div class="button-container">
-                <a onclick="loginOption(1)" class="btn btn--info text-light rounded-pill" href="javascript:void(0)">Browse Admin</a>
-                <a onclick="loginOption(2)" class="btn btn--info text-light rounded-pill" href="javascript:void(0)">Browse as User</a>
+                <a class="btn btn--info text-light rounded-pill" href="javascript:void(0)">Browse Admin</a>
+                <a class="btn btn--info text-light rounded-pill" href="javascript:void(0)">Browse as User</a>
               </div>
-              <!-- <div class="mt-5 w-75">
-                <ul class="d-flex align-items-center justify-content-between p-0 m-0">
-                  <li><a onclick="loginOption(0)" href="javascript:void(0)">Home</a></li>
-                  <li><a href="#">Getting Started</a></li>
-                  <li><a href="#">Doc</a></li>
-                  <li><a href="#">Privacy & Policy</a></li>
-                </ul>
-              </div> -->
             </div>
           </div>
           <div class="col-6">
@@ -89,7 +84,7 @@
               </div>
             </div>
 
-              <div class="tab d-none">
+              <!-- <div class="tab">
                 <div class="ps-3 ms-auto w-75">
                   <div class="d-flex align-items-center justify-content-between">
                     <h3>Admin login</h3>
@@ -125,45 +120,7 @@
                     </div>
                   </form>
                 </div>
-              </div>
-
-              <div class="tab d-none">
-                <div class="ps-3 w-75 ms-auto">
-                  <div class="d-flex align-items-center justify-content-between">
-                    <h3>User login</h3>
-                  </div>
-                  <form class="row mt-3 g-3 needs-validation" novalidate>
-                    <div class="col-md-12">
-                      <label for="validationCustom01" class="form-label">User Email Address</label>
-                      <input type="text" class="form-control border-indigo" id="validationCustom01" value="user@gmail.com" required>
-                      <div class="valid-feedback">
-                        Looks good!
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <label for="validationCustom02" class="form-label">User Password</label>
-                      <input type="password" class="form-control border-indigo" id="validationCustom02" value="user12345" required>
-                      <div class="valid-feedback">
-                        Looks good!
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                          Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                          You must agree before submitting.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <button class="btn btn--info text-light rounded-pill" type="submit">Login as User</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+              </div> -->
 
             </div>
           </div>
