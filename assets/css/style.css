@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Stick+No+Bills:wght@500;600;700;800&display=swap');
-ul{
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Stick+No+Bills:wght@500;600;700;800&display=swap");
+ul {
   padding: 0;
   list-style: none;
 }
-ul li a{
+ul li a {
   text-decoration: none;
   color: initial;
 }
-html,body{
-  font-family: 'Quicksand', sans-serif;
-    /* font-family: 'Stick No Bills', sans-serif; */
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  /* font-family: 'Stick No Bills', sans-serif; */
 }
-main{
+.main {
   height: 85vh;
   width: 100%;
 }
@@ -20,6 +21,7 @@ main{
   align-items: center;
   justify-content: center;
   border: 1px solid #6614d0;
+  width: 120px;
 }
 .logo i {
   font-size: 2.5rem;
@@ -35,23 +37,23 @@ main{
   font-size: 2.2rem;
   color: white;
   background: #6614d0;
-  padding: .4rem;
+  padding: 0.4rem;
   margin: 0;
 }
-.admin-password{
+.admin-password {
   width: 90%;
 }
-.admin-password:focus{
+.admin-password:focus {
   outline: none;
 }
-.log-text{
+.log-text {
   position: relative;
   z-index: 55;
 }
 .log-text span {
   background: #6614d01f;
   color: indigo;
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 29px;
 }
 .log-text h1 {
@@ -67,11 +69,11 @@ main{
   background-color: #6614d0;
   border-color: #6614d0;
 }
-.log-img{
+.log-img {
   position: relative;
   z-index: 77;
 }
-.log-img-abs{
+.log-img-abs {
   position: absolute;
 }
 .log-img-abs {
@@ -90,8 +92,14 @@ main{
   top: 33%;
   animation: up-down2 7s linear infinite;
 }
+.log-text h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: math;
+  color: #6614d0;
+}
 .border-indigo {
-  border-color: #6614d0!important;
+  border-color: #6614d0 !important;
 }
 .info {
   width: 200px;
@@ -127,6 +135,7 @@ main{
   bottom: 0;
   left: 0;
   z-index: 5;
+  width: 100%;
 }
 .icon-container {
   height: 40px;
@@ -149,49 +158,135 @@ main{
 .bg4 {
   background: #545050;
 }
-.or{
+.or {
   position: relative;
 }
-.or:after{
+.or:after {
   position: absolute;
   content: "";
-  height: 2px;
+  height: 1px;
   top: 48%;
-  left: 5%;
-  width: 150px;
+  right: 55%;
+  width: 120px;
   background-color: rgb(187, 171, 171);
 }
-.or:before{
+.or:before {
   position: absolute;
   content: "";
-  height: 2px;
+  height: 1px;
   top: 48%;
-  right: 5%;
-  width: 150px;
+  left: 55%;
+  width: 120px;
   background-color: rgb(187, 171, 171);
 }
+
+.login-page-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 8rem;
+  background: #eeeeee;
+}
+.login-left-section {
+  height: 80vh;
+  background: rgb(255, 255, 255);
+  position: relative;
+}
+.shadow-radious-left{
+  box-shadow: 0 0 7px #c9c9c9;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.login-right-section {
+  height: 80vh;
+  color: white;
+  position: relative;
+}
+.bg-purple{
+  background: var(--bs-purple);
+}
+.bg-purple-lite {
+  background: #ebdfff;
+}
+.responsive-padding{
+  padding: 10rem;
+}
+.shadow-radious-right{
+  box-shadow: 0 0 7px #c9c9c9;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.responsive-shadow {
+  box-shadow: 5px 5px 5px #ebebeb, -5px -5px 5px #ebebeb59;
+  border-radius: 10px;
+}
+.users {
+  display: flex;
+  align-items: center;
+}
+.user {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: -20px;
+  border: 7px solid #6f42c1;
+}
+.z-3 {
+  z-index: 5;
+}
+.login-nav li a {
+  color: white !important;
+}
+.google-img {
+  width: 20px;
+}
+.form-container {
+  width: 390px;
+}
+.only-big-screen{
+  display: block;
+}
+.only-small-screen{
+  display: none;
+  }
+  input:focus{
+    outline: none;
+  }
+
 @keyframes up-down {
-  0%{
+  0% {
     top: 5%;
   }
-  50%{
+  50% {
     top: 0%;
   }
-  100%{
+  100% {
     top: 5%;
   }
 }
 @keyframes up-down2 {
-  0%{
+  0% {
     top: 33%;
   }
-  50%{
+  50% {
     top: 28%;
   }
-  100%{
+  100% {
     top: 33%;
   }
 }
 .nav {
   justify-content: space-between;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0);
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
 }
